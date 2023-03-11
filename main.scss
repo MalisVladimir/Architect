@@ -1,0 +1,187 @@
+@import './styles/variables.scss';
+
+@import './styles/_fonts.scss';
+@import './styles/_navbar.scss';
+@import './styles/header.scss';
+@import './styles/about';
+@import './styles/tasks';
+@import './styles/our';
+@import './styles/contact';
+@import './styles/footer';
+
+
+body {
+    font-family: Hoves, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/* Для адаптивности картинок */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.title {
+    color: $secondary-color;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+.subtitle {
+    font-size: 64px;
+    color: $primary-color;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.primary-button {
+    padding: 24px 40px 20px 40px;
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+
+    &.black {
+        background-color: $primary-color;
+        color: #fff;
+
+        & img {
+            filter: invert(1);
+        }
+    }
+
+    & img {
+        margin-left: 15px;
+    }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    position: relative;
+
+    & .form-input,
+    & .form-textarea {
+        width: 100%;
+        background-color: #F3F3F3;
+        border: none;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    & .form-input:focus~.form-label,
+    & .form-textarea:focus~.form-label {
+        // top: 0;
+        // transform: translateY(calc(-100% - 2px));
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    & .form-input:required~.form-label {
+        &::after {
+            content: '*';
+            color: #C30000;
+        }
+    }
+
+    & .form-textarea:required~.form-label {
+        top: 20px;
+
+        &::after {
+            content: '*';
+            color: #C30000;
+        }
+    }
+
+    & .form-label {
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        color: #8D8D8D;
+        cursor: text;
+    }
+
+    & .form-input::placeholder,
+    & .form-textarea::placeholder {
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        color: #8D8D8D;
+        cursor: text;
+        opacity: 0;
+    }
+
+    & .form-input:focus,
+    & .form-textarea:focus {
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+    & .form-textarea::placeholder {
+        top: 20px;
+    }
+}

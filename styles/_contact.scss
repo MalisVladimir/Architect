@@ -1,0 +1,31 @@
+.contact {
+    margin-top: 120px;
+
+    & h4 {
+        margin-bottom: 22px;
+    }
+ 
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &-form {
+            max-width: 400px;
+            width: 100%;
+
+            & .form-control {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+
+                & label {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Hoves;
+  src: url(../fonts/TT-Hoves-Thin.ttf) format("ttf"), url(../fonts/TT-Hoves-Thin.woff) format("woff"), url(../fonts/TT-Hoves-Thin.eot) format("eot");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Hoves;
+  src: url(../fonts/TT-Hoves-Regular.ttf) format("ttf"), url(../fonts/TT-Hoves-Regular.woff) format("woff"), url(../fonts/TT-Hoves-Regular.eot) format("eot");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Hoves;
+  src: url(../fonts/TT-Hoves-Medium.ttf) format("ttf"), url(../fonts/TT-Hoves-Medium.woff) format("woff"), url(../fonts/TT-Hoves-Medium.eot) format("eot");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Hoves;
+  src: url(../fonts/TT-Hoves-Bold.ttf) format("ttf"), url(../fonts/TT-Hoves-Bold.woff) format("woff"), url(../fonts/TT-Hoves-Bold.eot) format("eot");
+  font-weight: 700;
+}
+.navbar {
+  margin: 30px 0;
+}
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+}
+.navbar-img {
+  max-width: 400px;
+  width: 100%;
+}
+.navbar-menu {
+  display: flex;
+  /* Убираем точки для ul списка */
+  list-style: none;
+  gap: 60px;
+}
+.navbar-menu-item a {
+  color: #333333;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: border 0.45s linear;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+.navbar-menu-item a:hover {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+
+.contacts-wrapper {
+  display: flex;
+  align-items: center;
+}
+.contacts-wrapper-text h4 {
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.contacts-wrapper-text .bold {
+  font-weight: 700;
+  font-size: 18px;
+}
+.contacts-wrapper-text-title {
+  margin: 60px 34px 34px 0;
+}
+.contacts-wrapper-text-address {
+  min-width: 250px;
+}
+.contacts-wrapper-text-phone {
+  margin: 43px 0 52px 0;
+}
+.contacts-wrapper-text-but {
+  margin-top: 32px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #333333;
+  padding: 24px 40px 20px 40px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer {
+  margin-top: 120px;
+  background-color: #2C2C2C;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 58px 20px 58px 0;
+}
+.footer-wrapper .footer-title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer-wrapper-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper-info a {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-wrapper-info a:last-child {
+  margin-bottom: 0;
+}
+.footer-wrapper-contacts .footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+.footer-wrapper-contacts .footer-contact-item h5 {
+  max-width: 250px;
+}
+.footer-wrapper-contacts .footer-contact-item:last-child {
+  margin-bottom: 0;
+}
+.footer-wrapper-social img {
+  margin-right: 40px;
+}
+.footer-wrapper-social img:last-child {
+  margin-right: 0;
+}
+
+body {
+  font-family: Hoves, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* Для адаптивности картинок */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #BDBDBD;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+}
+
+.subtitle {
+  font-size: 64px;
+  color: #333333;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.primary-button {
+  padding: 24px 40px 20px 40px;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  display: inline-block;
+}
+.primary-button.black {
+  background-color: #333333;
+  color: #fff;
+}
+.primary-button.black img {
+  filter: invert(1);
+}
+.primary-button img {
+  margin-left: 15px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: Hoves, Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-control .form-input, .form-control .form-textarea {
+  width: 100%;
+  background-color: #F3F3F3;
+  border: none;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  resize: none;
+}
+.form-control .form-input:focus ~ .form-label, .form-control .form-textarea:focus ~ .form-label {
+  opacity: 0;
+  pointer-events: none;
+}
+.form-control .form-input:required ~ .form-label::after {
+  content: "*";
+  color: #C30000;
+}
+.form-control .form-textarea:required ~ .form-label {
+  top: 20px;
+}
+.form-control .form-textarea:required ~ .form-label::after {
+  content: "*";
+  color: #C30000;
+}
+.form-control .form-label {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8D8D8D;
+  cursor: text;
+}
+.form-control .form-input::placeholder, .form-control .form-textarea::placeholder {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #8D8D8D;
+  cursor: text;
+  opacity: 0;
+}
+.form-control .form-input:focus::placeholder, .form-control .form-textarea:focus::placeholder {
+  opacity: 1;
+}
+.form-control .form-textarea::placeholder {
+  top: 20px;
+}

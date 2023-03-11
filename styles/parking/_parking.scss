@@ -1,0 +1,19 @@
+.parking {
+    &-title {
+        margin: 100px 0 60px;
+    }
+
+    &-info {
+        display: flex;
+        gap: 30px;
+        margin: 30px 0;
+
+        &-text {
+            max-width: 721px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: #000000;
+        }
+    }
+}

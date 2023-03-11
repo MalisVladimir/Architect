@@ -1,0 +1,57 @@
+.certificates {
+    &-title {
+        margin: 100px 0 42px;
+    }
+
+    &-files {
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+            margin-right: 78px;
+        }
+
+        & :last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &-symbols {
+        margin: 40px 0 120px 0;
+        // без этого margin есть?
+        display: flex;
+        justify-content: end;
+        display: flex;
+        align-items: center;
+
+        &-slider {
+            display: flex;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: $primary-color;
+
+            & .gray {
+                color: #BDBDBD;
+            }
+
+            & span {
+                margin: 0 30px;
+            }
+        }
+
+        &-arrows {
+            margin-left: 26px;
+
+            &-right {
+                background: #F9F9F9;
+                border: 1px solid #F2F2F2;
+                padding: 20px 15px;
+                transform: rotate(180deg);
+                margin-left: 23px;
+            }
+        }
+
+    }
+
+}

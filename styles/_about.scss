@@ -1,0 +1,29 @@
+.about {
+    margin: 120px 0;
+    &-wrapper {
+        display: flex;
+        padding: 30px 70px;
+        background-color: #FBFBFB;
+        gap: 30px;
+        &-text {
+            & p {
+                margin: 20px 0;
+                font-size: 16px;
+                line-height: 25px;
+                color: $black-color;
+            }
+        }
+        &-img {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-shrink: 0;
+            &-items {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-bottom: -55px;
+            }
+        }
+    }
+}

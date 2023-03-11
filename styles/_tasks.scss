@@ -1,0 +1,30 @@
+.tasks {
+    & .title {
+        margin-bottom: 62px;
+    }
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            &-number {
+                font-weight: 900;
+                font-size: 200px;
+                color: #F2F2F2;
+                line-height: 1;
+            }
+
+            &-text {
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 36px;
+                color: $primary-color;
+                max-width: 420px;
+            }
+        }
+    }
+}

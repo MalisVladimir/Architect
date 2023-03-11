@@ -1,0 +1,18 @@
+.our {
+    margin-top: 120px;
+    &-wrapper {
+        margin: 60px 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &-item {
+            display: flex;
+            gap: 30px;
+        }
+    }
+    &-button {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
